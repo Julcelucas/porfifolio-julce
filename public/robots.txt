@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://julcelucas.github.io/porfifolio-julce/sitemap.xml

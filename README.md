@@ -35,3 +35,33 @@ npm run build
 npm run preview
 ```
 
+## SEO implementado
+
+- Meta tags essenciais (`description`, `keywords`, `author`, `robots`)
+- Open Graph para partilha em redes sociais
+- Twitter Cards
+- Dados estruturados JSON-LD (`Person`)
+- `canonical`
+- `public/robots.txt`
+- `public/sitemap.xml`
+- `public/favicon.svg`
+
+## Deploy pronto
+
+### Netlify
+
+Este repositorio ja inclui `netlify.toml` com:
+
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Redirect SPA para `index.html`
+
+### Vercel
+
+Este repositorio ja inclui `vercel.json` com:
+
+- Framework: `vite`
+- Rewrite SPA para `index.html`
+
+Para publicar, basta importar o repositorio na plataforma desejada.
+

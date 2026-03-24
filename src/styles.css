@@ -39,18 +39,16 @@ a {
 }
 
 .site-shell {
-  padding: 22px 18px 68px;
+  padding: 100px 18px 68px;
 }
 
 .site-header {
-  position: sticky;
-  top: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
-  max-width: var(--max-width);
-  margin: 0 auto 22px;
   padding: 14px 18px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
   display: flex;
   justify-content: space-between;
   align-items: center;

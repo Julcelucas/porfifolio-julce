@@ -31,6 +31,13 @@ const navItems = [
 
 const projects = [
   {
+    title: 'Website do ISPCAN',
+    category: 'Institucional + Web Radio',
+    description:
+      'Plataforma institucional com web radio integrada, desenvolvida para o instituto onde concluiu o curso de Engenharia de Telecomunicacoes.',
+    link: 'https://ispcan-julce.netlify.app/',
+  },
+  {
     title: 'Cadastro Cliente',
     category: 'React',
     description:
@@ -57,13 +64,6 @@ const projects = [
     description:
       'Interface inspirada no Instagram, criada com TailwindCSS, com foco em consistencia visual, responsividade e boa experiencia de uso.',
     link: 'https://instaformulario-julce-tailwind.netlify.app/',
-  },
-  {
-    title: 'Website do ISPCAN',
-    category: 'Institucional + Web Radio',
-    description:
-      'Plataforma institucional com web radio integrada, desenvolvida para o instituto onde concluiu o curso de Engenharia de Telecomunicacoes.',
-    link: 'https://julcelucas.github.io/ispcann/',
   },
 ];
 

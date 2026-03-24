@@ -13,6 +13,7 @@
   --radius-lg: 28px;
   --radius-md: 18px;
   --max-width: 1200px;
+  --header-offset: 100px;
 }
 
 * {
@@ -21,11 +22,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
   color: var(--text);
   font-family: 'Manrope', sans-serif;
   background:
@@ -39,7 +42,7 @@ a {
 }
 
 .site-shell {
-  padding: 100px 18px 68px;
+  padding: var(--header-offset) 18px 68px;
 }
 
 .site-header {
@@ -55,6 +58,10 @@ a {
   gap: 18px;
   background: rgba(255, 250, 240, 0.86);
   backdrop-filter: blur(10px);
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--header-offset) + 12px);
 }
 
 .brand {
@@ -243,6 +250,8 @@ h2 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  max-width: 100%;
+  white-space: normal;
 }
 
 .chip-icon {
@@ -315,6 +324,27 @@ h2 {
 }
 
 @media (max-width: 1024px) {
+  .site-shell {
+    --header-offset: 148px;
+  }
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .site-header nav {
+    width: 100%;
+  }
+
+  .nav-list {
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
   }
@@ -330,20 +360,9 @@ h2 {
 
 @media (max-width: 760px) {
   .site-shell {
-    padding: 14px 10px 36px;
-  }
-
-  .site-header {
-    position: static;
-    border-radius: 20px;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .nav-list {
-    width: 100%;
-    overflow-x: auto;
-    padding-bottom: 4px;
+    --header-offset: 156px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .panel {

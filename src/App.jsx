@@ -31,6 +31,13 @@ const navItems = [
 
 const projects = [
   {
+    title: 'Cadastro Cliente',
+    category: 'React',
+    description:
+      'Aplicação de gerenciamento de clientes com funcionalidades completas de cadastro, listagem e pesquisa. Desenvolvida com React e TailwindCSS, oferecendo uma interface intuitiva e responsiva.',
+    link: 'https://cadastr-cliente.netlify.app/',
+  },
+  {
     title: 'Loja Online',
     category: 'Full Stack',
     description:

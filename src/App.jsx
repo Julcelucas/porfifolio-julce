@@ -6,7 +6,20 @@ import {
   FaFacebook,
   FaInstagram,
   FaArrowUpRightFromSquare,
+  FaHtml5,
+  FaCss3Alt,
+  FaNodeJs,
+  FaBootstrap,
 } from 'react-icons/fa6';
+import {
+  SiJavascript,
+  SiReact,
+  SiTailwindcss,
+  SiExpress,
+  SiMysql,
+  SiPostgresql,
+  SiGithub,
+} from 'react-icons/si';
 
 const navItems = [
   { label: 'Home', href: '#home' },
@@ -45,6 +58,20 @@ const projects = [
       'Plataforma institucional com web radio integrada, desenvolvida para o instituto onde concluiu o curso de Engenharia de Telecomunicacoes.',
     link: 'https://julcelucas.github.io/ispcann/',
   },
+];
+
+const skills = [
+  { label: 'HTML5', icon: FaHtml5 },
+  { label: 'CSS3', icon: FaCss3Alt },
+  { label: 'JavaScript', icon: SiJavascript },
+  { label: 'React', icon: SiReact },
+  { label: 'TailwindCSS', icon: SiTailwindcss },
+  { label: 'Node.js', icon: FaNodeJs },
+  { label: 'Express Handlebars', icon: SiExpress },
+  { label: 'Bootstrap', icon: FaBootstrap },
+  { label: 'MySQL', icon: SiMysql },
+  { label: 'PostgreSQL', icon: SiPostgresql },
+  { label: 'GitHub', icon: SiGithub },
 ];
 
 function App() {
@@ -175,22 +202,10 @@ function App() {
           <p className="eyebrow">Stack</p>
           <h2>Tecnologias e competencias</h2>
           <div className="chips">
-            {[
-              'HTML5',
-              'CSS3',
-              'JavaScript',
-              'React',
-              'TailwindCSS',
-              'Node.js',
-              'Express Handlebars',
-              'Bootstrap',
-              'MySQL',
-              'Icecast',
-              'Git',
-              'GitHub',
-            ].map((skill) => (
-              <span key={skill} className="chip">
-                {skill}
+            {skills.map(({ label, icon: Icon }) => (
+              <span key={label} className="chip">
+                <Icon className="chip-icon" aria-hidden="true" />
+                {label}
               </span>
             ))}
           </div>

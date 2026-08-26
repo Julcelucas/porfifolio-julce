@@ -30,26 +30,43 @@ const navItems = [
 ];
 
 const projects = [
-  {
-    title: 'Website do ISPCAN',
-    category: 'Institucional + Web Radio',
+  { title: 'Prodex Angola',
+    category: 'Gestão de Encomendas',
     description:
-      'Plataforma institucional com web radio integrada, desenvolvida para o instituto onde concluiu o curso de Engenharia de Telecomunicacoes.',
-    link: 'https://ispcan-julce.netlify.app/',
+      'Um sistema de gestão de produtos e encomendas — permite controlar catálogo de produtos e processar pedidos/encomendas em tempo real',
+    link: 'https://prodexangola.com/',
   },
-  {
-    title: 'Cadastro Cliente',
-    category: 'React',
-    description:
-      'Aplicação de gerenciamento de clientes com funcionalidades completas de cadastro, listagem e pesquisa. Desenvolvida com React e TailwindCSS, oferecendo uma interface intuitiva e responsiva.',
-    link: 'https://cadastr-cliente.netlify.app/',
-  },
+
   {
     title: 'Loja Online',
     category: 'Full Stack',
     description:
       'Sistema completo de cadastro, pesquisa e listagem de produtos com interface moderna e responsiva, desenvolvido com JavaScript, Node.js, Express Handlebars, Bootstrap e MySQL.',
-    link: 'https://julce-projecto-loja.up.railway.app/',
+    link: 'https://projeto-loja-ecomerce.onrender.com/',
+  },
+
+    {
+    title: 'Linium Digital',
+    category: 'Transformação Digital em Angola',
+    description:
+      'Uma plataforma que moderniza o comércio digital em Angola — ou seja, um sistema que transforma/digitaliza a forma como o comércio (compra, venda, gestão comercial) é feito no país.',
+    link: 'https://lightcyan-rabbit-823354.hostingersite.com/dashboard',
+  },
+
+      {
+    title: 'Oil and Gas-OS',
+    category: 'Sector de Petróleo e Gás em África',
+    description:
+      'Uma infraestrutura digital centralizada pensada para o sector de petróleo e gás em África — um sistema que unifica e organiza operações digitais desse sector.',
+    link: 'https://skyblue-anteater-375373.hostingersite.com/login',
+  },
+
+    {
+    title: 'Website do ISPCAN',
+    category: 'Institucional + Web Radio',
+    description:
+      'Plataforma institucional com web radio integrada, desenvolvida para o instituto onde concluiu o curso de Engenharia de Telecomunicacoes.',
+    link: 'https://ispcan-julce.netlify.app/',
   },
   {
     title: 'Lista de Tarefas',
@@ -60,10 +77,17 @@ const projects = [
   },
   {
     title: 'Formulario Instagram',
-    category: 'UI Engineering',
+    category: 'TailwindCSS',
     description:
       'Interface inspirada no Instagram, criada com TailwindCSS, com foco em consistencia visual, responsividade e boa experiencia de uso.',
     link: 'https://instaformulario-julce-tailwind.netlify.app/',
+  },
+  {
+    title: 'Cadastro Cliente',
+    category: 'React + IA',
+    description:
+      'Aplicação de gerenciamento de clientes com funcionalidades completas de cadastro, listagem e pesquisa. Desenvolvida com React e TailwindCSS, oferecendo uma interface intuitiva e responsiva.',
+    link: 'https://cadastr-cliente.netlify.app/',
   },
 ];
 
@@ -77,7 +101,6 @@ const skills = [
   { label: 'Express Handlebars', icon: SiExpress },
   { label: 'Bootstrap', icon: FaBootstrap },
   { label: 'MySQL', icon: SiMysql },
-  { label: 'PostgreSQL', icon: SiPostgresql },
   { label: 'GitHub', icon: SiGithub },
 ];
 
@@ -171,7 +194,7 @@ function App() {
             </div>
 
             <div className="social-links" aria-label="Redes sociais">
-              <a href="https://github.com/Julcelucas" target="_blank" rel="noreferrer">
+              <a href="https://github.com/repos?q=owner%3A%40me" target="_blank" rel="noreferrer">
                 <FaGithub />
               </a>
               <a
